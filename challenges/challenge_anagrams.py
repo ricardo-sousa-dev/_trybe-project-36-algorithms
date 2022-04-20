@@ -11,6 +11,7 @@
 # 3.5 - Retorne True se as palavras passadas forem anagramas sem diferenciar maiúsculas e minúsculas
 
 def insertion_sort_ordenation(string):
+    # https://www.geeksforgeeks.org/python-program-convert-string-list/
     list_string = []
     list_string[:0]=string
 
