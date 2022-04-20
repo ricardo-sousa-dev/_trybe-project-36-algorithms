@@ -1,3 +1,13 @@
+# O que será verificado:
+
+# 1.1 - Retorne, para uma entrada específica, a quantidade de estudantes presentes
+
+# 1.2 - Retorne None se em permanence_period houver alguma entrada inválida
+
+# 1.3 - Retorne None se target_time recebe um valor vazio
+
+# 1.4 - A função poderá, em menos que 0.02s, ser executada 10.000 vezes para uma entrada pequena (tempo da execução do avaliador no Pull Request)
+
 def study_schedule(permanence_period, target_time):
     frequency = 0
 
