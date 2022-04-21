@@ -1,19 +1,25 @@
 # O que será verificado:
 
-# 3.1 - Retorne True se as palavras passadas forem anagramas
+# 3.1 - Retorne True se as palavras passadas
+# forem anagramas
 
-# 3.2 - Retorne False se as palavras passadas por parâmetro não forem anagramas
+# 3.2 - Retorne False se as palavras passadas
+# por parâmetro não forem anagramas
 
-# 3.3 - Retorne False se alguma das palavras passadas por parâmetro for uma string vazia
+# 3.3 - Retorne False se alguma das palavras passadas
+# por parâmetro for uma string vazia
 
-# 3.4 - Execute a função, somando 10.000 execuções para uma entrada pequena, em menos que 8.2s (tempo da execução do avaliador no Pull Request)
+# 3.4 - Execute a função, somando 10.000 execuções
+# para uma entrada pequena, em menos que 8.2s (tempo
+# da execução do avaliador no Pull Request)
 
-# 3.5 - Retorne True se as palavras passadas forem anagramas sem diferenciar maiúsculas e minúsculas
+# 3.5 - Retorne True se as palavras passadas forem
+# anagramas sem diferenciar maiúsculas e minúsculas
 
-def insertion_sort_ordenation(string):
+def insertion_sort(string):
     # https://www.geeksforgeeks.org/python-program-convert-string-list/
     list_string = []
-    list_string[:0]=string
+    list_string[:0] = string
 
     for i in range(len(list_string)):
         current_value = list_string[i]
@@ -29,9 +35,7 @@ def is_anagram(first_string, second_string):
     if len(first_string) != len(second_string):
         return False
     else:
-        if insertion_sort_ordenation(first_string) == insertion_sort_ordenation(second_string):
+        if insertion_sort(first_string) == insertion_sort(second_string):
             return True
         else:
             return False
-
-
